@@ -1,0 +1,35 @@
+:root {
+  --intro-email-bg: hsl(217, 28%, 15%);
+  --main-bg: hsl(218, 28%, 13%);
+  --footer-bg: hsl(216, 53%, 9%);
+  --testimonials-bg: hsl(219, 30%, 18%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --white: hsl(0, 0%, 100%);
+  --body-font: 'Open Sans', sans-serif;
+  --font: 'Raleway', sans-serif;
+  --thin: 400;
+  --thick: 700;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--main-bg);
+}
+
+.container {
+  max-width: 70%;
+  width: 100rem;
+  margin: 5rem auto;
+}
