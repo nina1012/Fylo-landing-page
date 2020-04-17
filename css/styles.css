@@ -9,27 +9,39 @@
   --body-font: 'Open Sans', sans-serif;
   --font: 'Raleway', sans-serif;
   --thin: 400;
-  --thick: 700;
-}
+  --thick: 700; }
 
 *,
 *::before,
 *::after {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html {
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 body {
-  background-color: var(--main-bg);
-}
+  background-color: var(--main-bg); }
 
 .container {
   max-width: 70%;
   width: 100rem;
-  margin: 5rem auto;
-}
+  margin: 5rem auto; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font); }
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 25rem; }
+  .nav__item {
+    display: inline-block;
+    padding: 1rem; }
+  .nav__link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.7rem; }
