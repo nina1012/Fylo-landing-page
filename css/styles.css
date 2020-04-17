@@ -1,3 +1,11 @@
+button.cta {
+  display: inline-block;
+  background: linear-gradient(to right, var(--cyan), var(--blue));
+  border-radius: 5rem;
+  padding: 1rem 5rem;
+  color: var(--white);
+  border: 1px solid transparent; }
+
 :root {
   --intro-email-bg: hsl(217, 28%, 15%);
   --main-bg: hsl(218, 28%, 13%);
@@ -22,18 +30,44 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: var(--main-bg); }
+  background-color: var(--intro-email-bg);
+  font-size: var(--body-font);
+  color: var(--white); }
 
 .container {
   max-width: 70%;
   width: 100rem;
-  margin: 5rem auto; }
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: max-content, 100vh, max-content;
+  grid-gap: 2.5rem; }
+
+h2 {
+  font-size: 2.6rem;
+  margin: 2.5rem 0; }
+
+p {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 2rem; }
+
+.smaller-font {
+  font-size: 1.4rem; }
+
+h3 {
+  font-size: 1.9rem;
+  margin: 1.5rem 0; }
 
 .nav {
+  background-color: var(--intro-email-bg);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: var(--font); }
+  font-family: var(--font);
+  margin: 3rem 0;
+  grid-row: 1/2; }
   .nav__list {
     display: flex;
     justify-content: space-between;
@@ -45,3 +79,43 @@ body {
     color: var(--white);
     text-decoration: none;
     font-size: 1.7rem; }
+
+.header {
+  color: var(--white);
+  font-family: var(--font);
+  text-align: center;
+  line-height: 1.7;
+  position: relative;
+  grid-row: 2/3; }
+  .header > .intro-img {
+    width: 65rem;
+    height: auto; }
+  .header > .curvy-desktop {
+    position: absolute;
+    bottom: -22rem;
+    left: -30rem;
+    z-index: -1; }
+  .header > .curvy-mobile {
+    display: none; }
+
+.main {
+  margin: 15rem 0 0;
+  background-color: var(--main-bg); }
+
+.icon-section {
+  display: grid;
+  grid-gap: 10rem; }
+  .icon-section .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 35rem));
+    justify-content: space-around;
+    grid-gap: 5rem; }
+    .icon-section .row > .cell {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: var(--font); }
+      .icon-section .row > .cell > p {
+        text-align: center;
+        font-size: 1.3rem;
+        width: 35rem; }
