@@ -1,0 +1,36 @@
+////////////// COMPONENT STYLE //////////////////////
+button.cta {
+  display: inline-block;
+  background: linear-gradient(to right, var(--cyan), var(--blue));
+  border-radius: 3rem;
+  padding: 0 3rem;
+  min-width: 20rem;
+  width: max-content;
+
+  font-family: var(--font);
+  color: var(--white);
+  border: 1px solid transparent;
+  margin-top: 2rem;
+  height: 5rem;
+  font-weight: var(--thick);
+}
+
+.cta__link {
+  color: var(--cyan);
+  font-family: var(--font);
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.7rem;
+  span {
+    display: inline-flex;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+  }
+  .icon {
+    background-color: currentColor;
+  }
+}

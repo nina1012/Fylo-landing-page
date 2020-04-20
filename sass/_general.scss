@@ -1,0 +1,97 @@
+/////// GENERAL STYLE //////////////////
+:root {
+  // COLORS
+  // primary
+  --intro-email-bg: hsl(217, 28%, 15%);
+  --main-bg: hsl(218, 28%, 13%);
+  --footer-bg: hsl(216, 53%, 9%);
+  --testimonials-bg: hsl(219, 30%, 18%);
+
+  //accent
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+
+  //neutral
+  --white: hsl(0, 0%, 100%);
+
+  //FONT
+  // body
+  --body-font: 'Open Sans', sans-serif;
+
+  // headings,ctas,header-nav
+  --font: 'Raleway', sans-serif;
+
+  //weights
+  --thin: 400;
+  --thick: 700;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--body-font);
+}
+
+body {
+  background-color: var(--intro-email-bg);
+  // position: relative;
+  color: var(--white);
+}
+
+// .container {
+//   max-width: 70%;
+//   width: 100rem;
+//   margin: 0 auto;
+//   display: grid;
+//   grid-template-rows: max-content, 100vh;
+//   grid-gap: 2.5rem;
+// }
+.centering {
+  padding: 0 15%;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font);
+}
+
+h2 {
+  font-size: 4rem;
+  margin: 2.5rem 0;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+header > p {
+  margin: auto;
+  width: 50rem;
+}
+
+p.smaller-font {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.9rem;
+  margin: 1.5rem 0;
+}
+
+h5 {
+  font-weight: var(--thick);
+  font-size: 1.4rem;
+  padding-bottom: 0.2rem;
+}

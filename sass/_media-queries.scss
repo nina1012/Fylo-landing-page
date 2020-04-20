@@ -1,0 +1,90 @@
+////// MEDIA QUERIES STYLE FOR SCREENS BETWEEN 320PX AND 900PX ////////
+@media only screen and (max-width: 900px) and (min-width: 320px) {
+  html {
+    font-size: 55%;
+  }
+  .centering {
+    padding: 0 5%;
+  }
+
+  main {
+    justify-content: center;
+  }
+  .curvy-desktop {
+    display: none;
+  }
+  .curvy-mobile {
+    display: block;
+  }
+  header {
+    & > .curvy-mobile {
+      display: block;
+      left: 20%;
+      bottom: 25rem;
+    }
+    p {
+      width: 100%;
+    }
+  }
+
+  .section {
+    // &__with-image {
+    justify-content: center;
+    // }
+
+    &__with-testimonials {
+      grid-gap: 3rem;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fit, 70%);
+    }
+    & > .quote-image {
+      left: 10rem;
+    }
+
+    &__with-image {
+      grid-template-columns: none;
+
+      .image-productive {
+        width: 100%;
+      }
+    }
+  }
+
+  .form {
+    flex-direction: column;
+    width: 80%;
+
+    input[type='email'],
+    button.cta {
+      width: 100%;
+    }
+
+    form {
+      flex-direction: column;
+      margin-top: 4rem;
+    }
+  }
+
+  .footer {
+    grid-template-columns: none;
+    padding-top: 20rem;
+    padding-bottom: 5rem;
+    l & > * {
+      justify-content: start;
+    }
+    .cell:nth-of-type(3),
+    .cell:nth-of-type(4) {
+      align-items: flex-start;
+    }
+    .cell-2 {
+      justify-content: space-between;
+    }
+    .social {
+      justify-content: center;
+
+      span:nth-of-type(2) {
+        margin: 0 2rem;
+      }
+    }
+  }
+}
